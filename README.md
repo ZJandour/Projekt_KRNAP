@@ -5,5 +5,6 @@
 - To view the website, right-click on the index and select open to live server.
 
 # Page preview 
-![image](https://github.com/ZJandour/Projekt_KRNAP/assets/127226529/5cb3bfbe-590e-4a39-b8bb-089058f18127)
+![image](https://github.com/ZJandour/Projekt_KRNAP/assets/127226529/9cbff7b4-ab1c-460d-996e-0e4d5423429f)
+
 
