@@ -5,64 +5,43 @@
     list-style: none;
     text-decoration: none;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-    
-}
-
-.row{
-    max-width: 1140px;
-    margin: 0 auto;
-}
-
+    }
 body{
     width: 100%;
     background: url("../img/geologicke/lucni_hora.jpg");
     background-size: cover;
     background-attachment: fixed;
+    max-width: 2000px;
+    height:700px;
+    margin: 0 auto; 
 }
-
 img{
     width: 100%;
 }
-
 .navigation_all{
     width: 80%;
     height: 90px;
     background:  #77802e;
-    display: flex;
+    display:flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 40px;
     border-radius: 0 0 30px 30px;
-    margin: 0 auto;
+    box-shadow: 7px 7px 7px 7px#000;
+    margin: auto; 
 }
-
-/*  background: linear-gradient(rgba(51, 48, 48, 0.7),rgba(71, 66, 66, 0.7)), url("../img/geologicke/lucni_hora.jpg");*/
-/*
 header{
-    background: url("../img/geologicke/lucni_hora.jpg");
-    background-size: cover;
-    height: 80vh;
-    min-height:500px;
-    background-attachment: fixed;
-}
-*/
-
-header{
-    height: 80vh;
-    min-height:500px; 
+    height: 60%; 
 }
 .logo{
-    width: 8%;
+    width: 6%;
 }
-
 nav .logo{
     display: none;
 }
-
 nav ul{
     display: flex;
 }
-
 nav ul li a{
     color: #233307;;
     display: block;
@@ -72,17 +51,14 @@ nav ul li a{
     transition: 0.2s;
     border-radius: 30px;
 }
-
 nav ul li a:hover {
     background: #233307;
     color: #fff;
 }
-
 nav ul li a.active {
     background: #233307;
     color: #fff;
 }
-
 .hamburger{
     display: none;
     height: fit-content;
@@ -91,11 +67,9 @@ nav ul li a.active {
     border-radius: 5px;
     transition: 0.2s;
 }
-
 .hamburger:hover{
-    background: e3e9f7;
+    background: #e3e9f7;
 }
-
 .hamburger div{
     width: 30px;
     height: 2px;
@@ -103,38 +77,187 @@ nav ul li a.active {
     background: #212526;
 }
 
-
+/* main */
+main{
+    width: 100%; 
+    max-width: 2000px; 
+    margin: 0 auto; 
+   height: 1000px;
+}
+.slider {
+    height: 40%;
+    max-height: 1000px;
+    overflow: hidden;
+    position: relative;
+    width:100%;
+    max-width: 2000px;
+    box-shadow: 7px 7px 7px 0px#000;
+    background: #e3e9f7;
+}
+.slide img {
+    width: 80%;
+    max-height: 400px;
+    height: 70%;
+    margin: auto;
+    padding: auto;
+    display:flex;
+    margin-top:3.6% ;
+    box-shadow: 7px 7px 7px 7px#000;
+    justify-content: center;
+    align-items: center;
+}
+.navigation {
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20%;
+    display: flex;
+    margin-bottom: -70px;
+    z-index: 100;
+    position: absolute;
+}
+.left{
+    cursor: pointer;
+    float: left;
+    padding-bottom: 2px;
+    margin-top: 10%;
+    position: absolute;
+    margin-left: 2%;
+}
+.right{
+    cursor: pointer;
+    float: right;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 95%;
+}
+.dot {
+    width: 50px;
+    height: 10px;
+    border: 2px solid #233307;
+    margin: 0 2px;
+    cursor: pointer;
+     display: inline-block;
+}
+.active {
+    background-color: #77802e;
+}
+.dot:hover {
+    background: #233307;
+}
+input[name="r"]{
+    display: none;
+}
+.slides {
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+.slide {
+    width: 20%;
+    transition: 1s;
+}
+.active {
+    background-color: #233307;
+}
+.last-navbar{
+    color: #fff;
+    background: linear-gradient(rgba(51, 48, 48, 0.7),rgba(71, 66, 66, 0.7)), url("images/mainPhoto1a.jpeg");
+    height: 30%;
+    max-width: 2000px;
+    padding-top: 20px;
+    position: absolute;
+    width: 100%;
+    margin-top: -8%;
+}
+.last-navbar h1 {
+    width: 80%;
+    font-size: 30px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    max-width: 2000px;
+     margin: auto; 
+}
+/****** reference *****/
+.reference{
+    background: linear-gradient(rgba(51, 48, 48, 0.7),rgba(71, 66, 66, 0.7)), url("images/mainPhoto1a.jpeg");
+    background-size: cover;
+    background-attachment:fixed;
+    max-width: 100%;
+    display: block;
+    justify-content: center;
+    padding-top: 1px;
+    max-height: 500px;
+}
+.reference h2{
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    padding: auto;
+}
+.name{
+    height: 50px;
+    background-color: #233307;
+    padding-top: 8px;
+}
+.one-reference{
+    margin-top: 0%;
+    color:#77802e;
+    background-color: #e3e9f7;
+    font-size: 20px;
+    border:2px solid #233307;
+}
+.one-reference p{
+    font-style: italic;
+    margin: 20px;
+}
+.photo-name {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.photo-name img{
+    width: 80px;
+    text-align: center;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+.customer-referenc{
+    width: 80%;
+    margin-left: 5%;
+    padding-bottom:30px;
+    padding-top: 50px;
+}
 /* footer */
-
 .footer-all{
-   
-    color:#233307;
+   color:#233307;
 }
 .icon{
     width: 30px;
 }
-
 .footer-contac {
     width: 80%;
     height: 30%;
     min-height: 200px;
-    background:  #77802e;
+    background:  #5e651c;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 40px;
     border-radius:30px 30px 0 0;
     margin: 0 auto;
-
+    box-shadow: 7px 7px 7px 7px#000;
 }
-
 .footer-contac h4{
     color: #fff;
 }
 .col{
     padding-left: 10%;
 }
-
 .logo_footer{
     width: 80px;
     margin-right: -10px;
@@ -153,16 +276,19 @@ nav ul li a.active {
     margin: auto;
     display: block;
     padding: 15px;
-    
+    width: 100%;
 }
 @media only screen and (max-width: 1000px) {
-    .navigation_all {
+    header{
+        height: 40%; 
+    }
+   .navigation_all {
         width: 90%;
         padding: 0 20px;
-        height: 15%;
+        height: 19%;
     }
     .logo{
-        width: 60px;
+        width: 40px;
     }
     nav{
         position: absolute;
@@ -176,26 +302,21 @@ nav ul li a.active {
         box-shadow: 2px 0 20px 0 rgba(0,0,0,0.05);
         margin-top: -70px;
     }
-
     #nav_check:checked ~ nav {
         left: 0;
     }
-
     nav .logo{
         display: block;
         height: 70px;
         display: flex;
         align-items: center;
         margin-left: 30px;
-        
     }
-
     nav ul li a {
         margin-bottom: 5px;
         padding:10px 15px;
         border-radius: 5px;
     }
-
     nav ul{
         display: block;
         padding: 0 20px;
@@ -204,8 +325,50 @@ nav ul li a.active {
     .hamburger{
         display: block;
     }
-    
-
-
-    
+    .last-navbar{
+        margin-top: -15%;
+    }
+    .last-navbar h1{
+        padding: 20px;
+        font-size: 25px;
+    }
+    .slider{
+     height: 40%;    
+    }
+    .left{
+        margin-top: 20%;
+        margin-left: 1%;
+    }
+    .right{
+        margin-top: 20%;
+        margin-left: 93%;
+    }
+/****** reference *****/
+    .reference{
+        height: 45%;
+    }
+    .name{
+        font-size: 13px;
+        padding-top: 15px;
+    }
+    .one-reference{
+        font-size: 20px;
+    }
+    .one-reference p{
+        font-size: 15px;
+    }
+/******footer *****/
+    .icon{
+        width: 15px;
+    }
+    .col h4{
+        font-size: 13px;
+    }
+    .col p{
+        font-size: 15px
+    }
+    .logo_footer{
+        margin-right: -10px;
+        margin-top: 120px;
+    }
 }
